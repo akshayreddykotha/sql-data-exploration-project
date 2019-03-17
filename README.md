@@ -26,4 +26,4 @@ Now open the pgAdmin4 and connect to server and database. You are now open to qu
 
 New queries are always welcome :). Ping to collaborate and contribute.
 
-Thanks to [Derek](https://www.linkedin.com/in/dereksteer/) from [MODE Analytics](https://modeanalytics.com) for hosting such a concept-wise outline of what all an SQL aspirant needs to know and learn about. Cheers to [Udacity](classroom.udacity.com)!
+Thanks to [Derek](https://www.linkedin.com/in/dereksteer/) from [MODE Analytics](https://modeanalytics.com) for hosting such a concept-wise outline of what all an SQL aspirant needs to know and learn about. Cheers to [Udacity](https://classroom.udacity.com)!
