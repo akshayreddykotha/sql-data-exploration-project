@@ -31,7 +31,7 @@ Now open the pgAdmin4 and connect to server and database. You are now open to qu
 
 3. Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. Your final table should have 3 columns: region name, account name, and unit price. A few accounts have 0 for total, so I divided by (total + 0.01) to assure not dividing by zero.
 
-[Check your queries here](). 
+Check your queries using this file [Joins_11_part_1.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Joins_11_part_1.sql). 
 
 New queries are always welcome :). Ping to collaborate and contribute.
 
