@@ -7,7 +7,7 @@ This short project is to help anyone to setup their own local environment and pr
 ### Database used: 
 Parch and Posey, a hypothetical paper company's sales data of different types of paper (gloss, standard). The database consists of different [tables](https://github.com/akshayreddykotha/sql-data-exploration-project/tree/master/data) linked with a database schema. If you want to create a database from scratch, you can use these excel files and set it up.
 
-### Alternate way:
+### Alternate way to have the database set up locally:
 Gathered the [database dump](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/parch_and_posey_db_archivedump) file from [Ayushi](https://github.com/ayushi-b). The database dump was created using `pg_dump` and it is an archive unlike a database dump file with an sql extension. For difference between both, refer to this [question](https://stackoverflow.com/questions/2732474/restore-a-postgres-backup-file-using-the-command-line).
 
 ### Load database dump in windows:
@@ -22,9 +22,21 @@ Gathered the [database dump](https://github.com/akshayreddykotha/sql-data-explor
 Now open the pgAdmin4 and connect to server and database. You are now open to querying the database via the query tool within this GUI.
 
 ## Practice Querying - The Ulterior Motive for setting up the environment:
-### Sample Queries:
+Below are some sample queries relevant. Practice them and play with them to learn more.
+### Basic
+#### LIKE
+Use the accounts table to find
+1. All the companies whose names start with 'C'. 
+2. All companies whose names contain the string 'one' somewhere in the name.
+3. All companies whose names end with 's'.
 
-#### Joins
+Check your queries using this file [Basic_35_Like.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Basic_35_Like.sql). LIKE is used with wild cards.
+#### IN
+1. Use the accounts table to find the account name, primary_poc, and sales_rep_id for Walmart, Target, and Nordstrom.
+2. Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
+
+Check your queries using this file [Basic_38_In.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Basic_38_In.sql). IN is used to filter data for more than one element of a particular field/ column.
+### Joins
 1. Provide a table for all web_events associated with account name of Walmart. There should be three columns. Be sure to include the primary_poc, time of the event, and the channel for each event. Additionally, you might choose to add a fourth column to assure only Walmart events were chosen. 
 
 2. Provide a table that provides the region for each sales_rep along with their associated accounts. Your final table should include three columns: the region name, the sales rep name, and the account name. Sort the accounts alphabetically (A-Z) according to account name. 
