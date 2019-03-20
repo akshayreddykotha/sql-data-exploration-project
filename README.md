@@ -44,6 +44,24 @@ Check your queries using this file [Basic_38_In.sql](https://github.com/akshayre
 3. Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. Your final table should have 3 columns: region name, account name, and unit price. A few accounts have 0 for total, so I divided by (total + 0.01) to assure not dividing by zero.
 
 Check your queries using this file [Joins_11_part_1.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Joins_11_part_1.sql). 
+### Aggregations
+#### HAVING
+1. How many of the sales reps have more than 5 accounts that they manage?
+2. How many accounts have more than 20 orders?
+3. Which account has the most orders?
+4. Which accounts spent more than 30,000 usd total across all orders?
+5. Which accounts spent less than 1,000 usd total across all orders?
+6. Which account has spent the most with us?
+7. Which account has spent the least with us?
+8. Which accounts used facebook as a channel to contact customers more than 6 times?
+9. Which account used facebook most as a channel? 
+10. Which channel was most frequently used by most accounts?
+
+*Trivia*:
+1. ORDER BY can have the new variable name used
+2. HAVING BY doesn't allow variable name rather it allows aggregation function with condition.
+
+Check your queries using this file [Aggregations_23_Having.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Aggregations_23_Having.sql).
 
 New queries are always welcome :). Ping to collaborate and contribute.
 
