@@ -1,5 +1,5 @@
 /*Query 1 - 34*/
-SELECT COUNT(*)
+SELECT s.name, COUNT(*)
 FROM accounts a
 JOIN sales_reps s
 ON s.id = a.sales_rep_id
@@ -7,7 +7,7 @@ GROUP BY s.name
 HAVING COUNT(*) > 5;
 
 /*Query 2 - 120*/
-SELECT COUNT(*)
+SELECT a.name, COUNT(*)
 FROM accounts a
 JOIN orders o
 ON o.account_id = a.id
@@ -24,7 +24,7 @@ ORDER BY COUNT(o.occurred_at) DESC
 LIMIT 1;
 
 /*Query 4 - 204*/
-SELECT a.name
+SELECT a.name, sum(o.total_amt_usd)
 FROM accounts a
 JOIN orders o
 ON o.account_id = a.id
@@ -40,7 +40,7 @@ GROUP BY a.name
 HAVING SUM(o.total_amt_usd) < 1000;
 
 /*Query 6 - EOG Resources*/
-SELECT a.name
+SELECT a.name, SUM(o.total_amt_usd) Total_spent
 FROM accounts a
 JOIN orders o
 ON o.account_id = a.id
