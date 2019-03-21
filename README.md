@@ -45,6 +45,11 @@ Check your queries using this file [Basic_38_In.sql](https://github.com/akshayre
 
 Check your queries using this file [Joins_11_part_1.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Joins_11_part_1.sql). 
 ### Aggregations
+#### DISTINCT
+1. Use DISTINCT to test if there are any accounts associated with more than one region.
+2. Have any sales reps worked on more than one account?
+
+Check your queries using this file [Aggregations_20_Distinct.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Aggregations_20_Distinct.sql).
 #### HAVING
 1. How many of the sales reps have more than 5 accounts that they manage?
 2. How many accounts have more than 20 orders?
