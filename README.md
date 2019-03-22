@@ -68,6 +68,13 @@ Check your queries using this file [Aggregations_20_Distinct.sql](https://github
 
 
 Check your queries using this file [Aggregations_23_Having.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Aggregations_23_Having.sql).
+
+### Window Functions
+#### ROW_NUMBER & RANK
+*Trivia*:
+1. Within OVER() ORDER BY clause runs first and then runs Partition BY clause. 
+2. RANK works with the concept of [Standard Competition Ranking](https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)) which skips the rank if same ranks are allocated. DENSE_RANK assigns same ranks but doesn't skip the rank. 
+
 ### Advanced Joins & Performance Tuning
 #### UNION
 1. Write a query that uses UNION ALL on two instances (and selecting all columns) of the accounts table.
