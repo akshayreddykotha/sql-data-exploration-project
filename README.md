@@ -71,6 +71,10 @@ Check your queries using this file [Aggregations_23_Having.sql](https://github.c
 
 ### Window Functions
 #### ROW_NUMBER & RANK
+1. Ranking Total Paper Ordered by Account: Select the id, account_id, and total variable from the orders table, then create a column called total_rank that ranks this total amount of paper ordered (from highest to lowest) for each account using a partition. Your final table should have these four columns.
+
+Check your query using this file [WindowFunctions_8_RowNumbe,Rank.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/WindowFunctions_8_RowNumber%2CRank.sql)
+
 *Trivia*:
 1. Within OVER() ORDER BY clause runs first and then runs Partition BY clause. 
 2. RANK works with the concept of [Standard Competition Ranking](https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)) which skips the rank if same ranks are allocated. DENSE_RANK assigns same ranks but doesn't skip the rank. 
