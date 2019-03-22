@@ -66,7 +66,15 @@ Check your queries using this file [Aggregations_20_Distinct.sql](https://github
 1. ORDER BY can have the new variable name used
 2. HAVING BY doesn't allow variable name rather it allows aggregation function with condition.
 
+
 Check your queries using this file [Aggregations_23_Having.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Aggregations_23_Having.sql).
+### Advanced Joins & Performance Tuning
+#### UNION
+1. Write a query that uses UNION ALL on two instances (and selecting all columns) of the accounts table.
+2. Add a WHERE clause to each of the tables that you unioned in the query above, filtering the first table where name equals Walmart and filtering the second table where name equals Disney. 
+3. Perform the union in your first query (under the Appending Data via UNION header) in a common table expression and name it double_accounts. Then do a COUNT the number of times a name appears in the double_accounts table. If you do this correctly, your query results should have a count of 2 for each name.
+
+Check your queries using this file [AdvancedJoins_PerformanceTuning_12_Union.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/AdvancedJoins_PerformanceTuning_12_Union.sql).
 
 New queries are always welcome :). Ping to collaborate and contribute.
 
