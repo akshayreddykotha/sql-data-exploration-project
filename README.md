@@ -87,6 +87,13 @@ Check your query using this file [WindowFunctions_8_RowNumbe,Rank.sql](https://g
 
 Check your queries using this file [AdvancedJoins_PerformanceTuning_12_Union.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/AdvancedJoins_PerformanceTuning_12_Union.sql).
 
+### Subqueries
+These are an integral part of queries in SQL without which complex queries don't exist.
+
+*Trivia*:
+1. Most commonly used in WHERE, then SELECT and FROM.
+2. Sometimes subqueries are also seen within ON while joining two tables.
+
 New queries are always welcome :). Ping to collaborate and contribute.
 
 Thanks to [Derek](https://www.linkedin.com/in/dereksteer/) from [MODE Analytics](https://modeanalytics.com) for hosting such a concept-wise outline of what all an SQL aspirant needs to know and learn about. Cheers to [Udacity](https://classroom.udacity.com)!
