@@ -36,11 +36,17 @@ Check your queries using this file [Basic_35_Like.sql](https://github.com/akshay
 2. Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
 
 Check your queries using this file [Basic_38_In.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Basic_38_In.sql). IN is used to filter data for more than one element of a particular field/ column.
+
+#### INTO
+To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
+
 ### Joins
 
-#### Semi-Join
+#### Definitions
 
-A semi join returns the rows of the first table where it can find a match in the second table.
+1. A **semi-join** returns the rows of the first table where it can find a match in the second table.
+
+#### Questions
 
 1. Provide a table for all web_events associated with account name of Walmart. There should be three columns. Be sure to include the primary_poc, time of the event, and the channel for each event. Additionally, you might choose to add a fourth column to assure only Walmart events were chosen. 
 
