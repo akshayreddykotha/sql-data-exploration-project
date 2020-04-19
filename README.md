@@ -13,11 +13,16 @@ Gathered the [database dump](https://github.com/akshayreddykotha/sql-data-explor
 ### Load database dump in windows:
 
 1. Install [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) on your desktop
-2. Open windows CMD
-3. Go to the folder where you downloaded the `parch_and_posey_db_archivedump` file.
-4. Run this `pg_restore --create --dbname=postgres --username=postgres parch_and_posey_db_archivedump`. You do not need to create a new database prior to loading this database. This command loads the database into a new database named *Parch & Posey Database*.
-5. On running this command, you might be asked a password which you might have set during installation of PostgreSQL on your machine.
-6. Creation of database prior to load/restore isn't preferred to avoid conflicts.
+2. Open pgAdmin app, login with the password set during installation of PostgreSQL for desktop
+3. Create a database by clicking on the Databases (open the tree starting from `Server`)
+4. After creating database, click the database name, go to `Objects` dropdown, you should see `Restore` option
+5. Using `Restore` option, choose thedump file you downloaded, the `parch_and_posey_db_archivedump` file and restore it.
+6. You should see the different tables within the database under `Tables` within the tree structure under the database you created
+
+**An alternate way**:
+1. Run this `pg_restore --create --dbname=postgres --username=postgres parch_and_posey_db_archivedump`. You do not need to create a new database prior to loading this database. This command loads the database into a new database named *Parch & Posey Database*.
+2. On running this command, you might be asked a password which you might have set during installation of PostgreSQL on your machine.
+3. Creation of database prior to load/restore isn't preferred to avoid conflicts.
 
 Now open the pgAdmin4 and connect to server and database. You are now open to querying the database via the query tool within this GUI.
 
