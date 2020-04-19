@@ -36,7 +36,18 @@ Check your queries using this file [Basic_35_Like.sql](https://github.com/akshay
 2. Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
 
 Check your queries using this file [Basic_38_In.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Basic_38_In.sql). IN is used to filter data for more than one element of a particular field/ column.
+
+#### INTO
+To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
+
 ### Joins
+
+#### Definitions
+
+1. A **semi-join** returns the rows of the first table where it can find a match in the second table.
+
+#### Questions
+
 1. Provide a table for all web_events associated with account name of Walmart. There should be three columns. Be sure to include the primary_poc, time of the event, and the channel for each event. Additionally, you might choose to add a fourth column to assure only Walmart events were chosen. 
 
 2. Provide a table that provides the region for each sales_rep along with their associated accounts. Your final table should include three columns: the region name, the sales rep name, and the account name. Sort the accounts alphabetically (A-Z) according to account name. 
@@ -86,6 +97,13 @@ Check your query using this file [WindowFunctions_8_RowNumbe,Rank.sql](https://g
 3. Perform the union in your first query (under the Appending Data via UNION header) in a common table expression and name it double_accounts. Then do a COUNT the number of times a name appears in the double_accounts table. If you do this correctly, your query results should have a count of 2 for each name.
 
 Check your queries using this file [AdvancedJoins_PerformanceTuning_12_Union.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/AdvancedJoins_PerformanceTuning_12_Union.sql).
+
+### Subqueries
+These are an integral part of queries in SQL without which complex queries don't exist.
+
+*Trivia*:
+1. Most commonly used in WHERE, then SELECT and FROM.
+2. Sometimes subqueries are also seen within ON while joining two tables.
 
 New queries are always welcome :). Ping to collaborate and contribute.
 
