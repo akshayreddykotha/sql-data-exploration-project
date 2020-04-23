@@ -51,6 +51,9 @@ To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
 
 1. A **semi-join** returns the rows of the first table where it can find a match in the second table.
 
+*Trivia*:
+1. JOIN keywords works for INNER JOIN. It is the default join in SQL.
+
 #### Questions
 
 1. Provide a table for all web_events associated with account name of Walmart. There should be three columns. Be sure to include the primary_poc, time of the event, and the channel for each event. Additionally, you might choose to add a fourth column to assure only Walmart events were chosen. 
@@ -80,8 +83,8 @@ Check your queries using this file [Aggregations_20_Distinct.sql](https://github
 
 *Trivia*:
 1. ORDER BY can have the new variable name used
-2. HAVING BY doesn't allow variable name rather it allows aggregation function with condition.
-
+2. HAVING doesn't allow variable name rather it allows aggregation function with condition.
+3. HAVING works only where there is an aggregation column (Ex: SUM(orders)...HAVING orders  > 999) in the table/view built.
 
 Check your queries using this file [Aggregations_23_Having.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Aggregations_23_Having.sql).
 
