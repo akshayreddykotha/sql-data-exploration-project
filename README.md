@@ -113,6 +113,15 @@ These are an integral part of queries in SQL without which complex queries don't
 1. Most commonly used in WHERE, then SELECT and FROM.
 2. Sometimes subqueries are also seen within ON while joining two tables.
 
+### Miscellaneous
+
+#### DATE_TRUNC
+1. To get the specific 'week', 'month' from the date - `DATE_TRUNC('week', Date)`
+
+#### CTE - Common Table Expression 
+1. Use `WITH () AS table1` to save a table created from raw table. `table1` can be used for further calculations.
+2. CTEs are useful in cleaner modularized code.
+
 New queries are always welcome :). Ping to collaborate and contribute.
 
 Thanks to [Derek](https://www.linkedin.com/in/dereksteer/) from [MODE Analytics](https://modeanalytics.com) for hosting such a concept-wise outline of what all an SQL aspirant needs to know and learn about. Cheers to [Udacity](https://classroom.udacity.com)!
