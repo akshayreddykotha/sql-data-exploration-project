@@ -35,12 +35,12 @@ Use the accounts table to find
 2. All companies whose names contain the string 'one' somewhere in the name.
 3. All companies whose names end with 's'.
 
-Check your queries using this file [Basic_35_Like.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Basic_35_Like.sql). LIKE is used with wild cards.
+Check your queries using this file [Basic_35_Like.sql](). LIKE is used with wild cards.
 #### IN
 1. Use the accounts table to find the account name, primary_poc, and sales_rep_id for Walmart, Target, and Nordstrom.
 2. Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
 
-Check your queries using this file [Basic_38_In.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Basic_38_In.sql). IN is used to filter data for more than one element of a particular field/ column.
+Check your queries using this file [Basic_38_In.sql](). IN is used to filter data for more than one element of a particular field/ column.
 
 #### INTO
 To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
@@ -62,13 +62,14 @@ To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
 
 3. Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. Your final table should have 3 columns: region name, account name, and unit price. A few accounts have 0 for total, so I divided by (total + 0.01) to assure not dividing by zero.
 
-Check your queries using this file [Joins_11_part_1.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Joins_11_part_1.sql). 
+Check your queries using this file [Joins_11_part_1.sql](). 
 ### Aggregations
 #### DISTINCT
 1. Use DISTINCT to test if there are any accounts associated with more than one region.
 2. Have any sales reps worked on more than one account?
 
-Check your queries using this file [Aggregations_20_Distinct.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Aggregations_20_Distinct.sql).
+Check your queries using this file [Aggregations_20_Distinct.sql]()
+
 #### HAVING
 1. How many of the sales reps have more than 5 accounts that they manage?
 2. How many accounts have more than 20 orders?
@@ -86,13 +87,13 @@ Check your queries using this file [Aggregations_20_Distinct.sql](https://github
 2. HAVING doesn't allow variable name rather it allows aggregation function with condition.
 3. HAVING works only where there is an aggregation column (Ex: SUM(orders)...HAVING orders  > 999) in the table/view built.
 
-Check your queries using this file [Aggregations_23_Having.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/Aggregations_23_Having.sql).
+Check your queries and output using this file [aggregations-HAVING.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/aggregations-HAVING.ipynb).
 
 ### Window Functions
 #### ROW_NUMBER & RANK
 1. Ranking Total Paper Ordered by Account: Select the id, account_id, and total variable from the orders table, then create a column called total_rank that ranks this total amount of paper ordered (from highest to lowest) for each account using a partition. Your final table should have these four columns.
 
-Check your query using this file [WindowFunctions_8_RowNumbe,Rank.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/WindowFunctions_8_RowNumber%2CRank.sql)
+Check your query using this file [WindowFunctions_8_RowNumbe,Rank.sql]()
 
 *Trivia*:
 1. Within OVER() ORDER BY clause runs first and then runs Partition BY clause. 
@@ -104,7 +105,7 @@ Check your query using this file [WindowFunctions_8_RowNumbe,Rank.sql](https://g
 2. Add a WHERE clause to each of the tables that you unioned in the query above, filtering the first table where name equals Walmart and filtering the second table where name equals Disney. 
 3. Perform the union in your first query (under the Appending Data via UNION header) in a common table expression and name it double_accounts. Then do a COUNT the number of times a name appears in the double_accounts table. If you do this correctly, your query results should have a count of 2 for each name.
 
-Check your queries using this file [AdvancedJoins_PerformanceTuning_12_Union.sql](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/AdvancedJoins_PerformanceTuning_12_Union.sql).
+Check your queries using this file [AdvancedJoins_PerformanceTuning_12_Union.sql]().
 
 ### Subqueries
 These are an integral part of queries in SQL without which complex queries don't exist.
