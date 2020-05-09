@@ -68,7 +68,7 @@ Check your queries using this file [Joins_11_part_1.sql]().
 1. Use DISTINCT to test if there are any accounts associated with more than one region.
 2. Have any sales reps worked on more than one account?
 
-Check your queries using this file [Aggregations_20_Distinct.sql]()
+Check your queries and output using this file [aggregations-DISTINCT.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/aggregations-DISTINCT.ipynb)
 
 #### HAVING
 1. How many of the sales reps have more than 5 accounts that they manage?
@@ -93,7 +93,7 @@ Check your queries and output using this file [aggregations-HAVING.ipynb](https:
 #### ROW_NUMBER & RANK
 1. Ranking Total Paper Ordered by Account: Select the id, account_id, and total variable from the orders table, then create a column called total_rank that ranks this total amount of paper ordered (from highest to lowest) for each account using a partition. Your final table should have these four columns.
 
-Check your query using this file [WindowFunctions_8_RowNumbe,Rank.sql]()
+Check your query and output using this file [windowfunctions-RANK.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/windowfunctions-RANK.ipynb)
 
 *Trivia*:
 1. Within OVER() ORDER BY clause runs first and then runs Partition BY clause. 
