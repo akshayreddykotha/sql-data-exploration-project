@@ -120,8 +120,19 @@ These are an integral part of queries in SQL without which complex queries don't
 1. To get the specific 'week', 'month' from the date - `DATE_TRUNC('week', Date)`
 
 #### CTE - Common Table Expression 
-1. Use `WITH () AS table1` to save a table created from raw table. `table1` can be used for further calculations.
+1. Use `WITH table1 AS (query)` to save a table created from raw table. `table1` can be used for further calculations.
 2. CTEs are useful in cleaner modularized code.
+
+#### COALESCE
+1. To set a NULL value to a desired value.
+2. Ex: COALESCE(`base command (generally LAG)`, 0)
+
+#### ROUND
+1. To round values to the desired number of decimal places.
+2. Ex: ROUND((current - previous) :: NUMERIC/previous, 2). Adding **NUMERIC** is important without there will be an error (run-time).
+
+#### INTERVAL
+1. INTERVAL '1 month'
 
 New queries are always welcome :). Ping to collaborate and contribute.
 
