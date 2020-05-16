@@ -35,12 +35,12 @@ Use the accounts table to find
 2. All companies whose names contain the string 'one' somewhere in the name.
 3. All companies whose names end with 's'.
 
-Check your queries using this file [Basic_35_Like.sql](). LIKE is used with wild cards.
+Check your queries using this file [matching-IN-LIKE.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/matching-IN-LIKE.ipynb). LIKE is used with wild cards.
 #### IN
 1. Use the accounts table to find the account name, primary_poc, and sales_rep_id for Walmart, Target, and Nordstrom.
 2. Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
 
-Check your queries using this file [Basic_38_In.sql](). IN is used to filter data for more than one element of a particular field/ column.
+Check your queries using this file [matching-IN-LIKE.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/matching-IN-LIKE.ipynb). IN is used to filter data for more than one element of a particular field/ column.
 
 #### INTO
 To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
@@ -130,6 +130,9 @@ These are an integral part of queries in SQL without which complex queries don't
 #### ROUND
 1. To round values to the desired number of decimal places.
 2. Ex: ROUND((current - previous) :: NUMERIC/previous, 2). Adding **NUMERIC** is important without there will be an error (run-time).
+
+#### PERCENTILE
+1. A `30 percentile` in column_b by using PERCENTILE_CONT(0.30) WITHIN GROUP (ORDER BY column_b ASC) (usage of window function)
 
 #### INTERVAL
 1. INTERVAL '1 month'
