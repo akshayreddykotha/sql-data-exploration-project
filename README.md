@@ -137,6 +137,17 @@ These are an integral part of queries in SQL without which complex queries don't
 #### INTERVAL
 1. INTERVAL '1 month'
 
+### TO_CHAR
+1. To convert dates to an easily readable format. `TO_CHAR(date, 'DD')` gives the day number for instance.
+2. `FMDay DD, FMMonth YYYY` is the format which converts the YYYY-MM-DD into a fully readable data.
+
+#### PIVOTING
+1. PIVOTING is the core tool which allows reshaping tables.
+2. CROSSTAB($$ $$) allows pivoting which is converting a long table to wide table.
+3. `$$ $$` within the CROSSTAB converts the table to string before converting it to a CROSSTAB
+4. An extension has to be imported, just like importing a library in python/R which is done by `CREATE EXTENSION IF NOT EXISTS tablefunc` which is a library which isn't present in the default environment.
+
+
 New queries are always welcome :). Ping to collaborate and contribute.
 
 Thanks to [Derek](https://www.linkedin.com/in/dereksteer/) from [MODE Analytics](https://modeanalytics.com) for hosting such a concept-wise outline of what all an SQL aspirant needs to know and learn about. Cheers to [Udacity](https://classroom.udacity.com)!
