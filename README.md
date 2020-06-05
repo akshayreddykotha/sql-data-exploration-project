@@ -114,7 +114,24 @@ These are an integral part of queries in SQL without which complex queries don't
 1. Most commonly used in WHERE, then SELECT and FROM.
 2. Sometimes subqueries are also seen within ON while joining two tables.
 
+
+### Arithmetic functions - Not so common
+
+#### ROUND
+1. To round values to the desired number of decimal places.
+2. Ex: ROUND((current - previous) :: NUMERIC/previous, 2). Adding **NUMERIC** is important without there will be an error (run-time).
+
+#### PERCENTILE
+1. A `30 percentile` in column_b by using PERCENTILE_CONT(0.30) WITHIN GROUP (ORDER BY column_b ASC) (usage of window function)
+
+#### LENGTH
+1. Can be used to calculate the length of string in any cell in the table. It goes by LENGTH(city) for instance.
+
 ### Miscellaneous
+
+#### RIGHT and LEFT
+1. RIGHT(name, 3) extracts the last the letters of the column name.
+2. LEFT(name, 2) extracts the first two letter of the column name.
 
 #### DATE_TRUNC
 1. To get the specific 'week', 'month' from the date - `DATE_TRUNC('week', Date)`
@@ -127,17 +144,10 @@ These are an integral part of queries in SQL without which complex queries don't
 1. To set a NULL value to a desired value.
 2. Ex: COALESCE(`base command (generally LAG)`, 0)
 
-#### ROUND
-1. To round values to the desired number of decimal places.
-2. Ex: ROUND((current - previous) :: NUMERIC/previous, 2). Adding **NUMERIC** is important without there will be an error (run-time).
-
-#### PERCENTILE
-1. A `30 percentile` in column_b by using PERCENTILE_CONT(0.30) WITHIN GROUP (ORDER BY column_b ASC) (usage of window function)
-
 #### INTERVAL
 1. INTERVAL '1 month'
 
-### TO_CHAR
+#### TO_CHAR
 1. To convert dates to an easily readable format. `TO_CHAR(date, 'DD')` gives the day number for instance.
 2. `FMDay DD, FMMonth YYYY` is the format which converts the YYYY-MM-DD into a fully readable data.
 
