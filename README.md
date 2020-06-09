@@ -136,6 +136,9 @@ These are an integral part of queries in SQL without which complex queries don't
 #### DATE_TRUNC
 1. To get the specific 'week', 'month' from the date - `DATE_TRUNC('week', Date)`
 
+#### EXTRACT
+1. Works similar to DATE_TRUNC with an added keyword `FROM` - `EXTRACT('month' FROM Date)` gives you the month
+
 #### CTE - Common Table Expression 
 1. Use `WITH table1 AS (query)` to save a table created from raw table. `table1` can be used for further calculations.
 2. CTEs are useful in cleaner modularized code.
