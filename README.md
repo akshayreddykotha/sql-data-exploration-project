@@ -142,6 +142,7 @@ These are an integral part of queries in SQL without which complex queries don't
 #### CTE - Common Table Expression 
 1. Use `WITH table1 AS (query)` to save a table created from raw table. `table1` can be used for further calculations.
 2. CTEs are useful in cleaner modularized code.
+3. When two or more tables are defined with CTE, the use of `WITH table1 AS` is sufficient at the start and from the second table, a comma followed by `AS table2 (...)` works after each additional CTE defined.
 
 #### COALESCE
 1. To set a NULL value to a desired value.
