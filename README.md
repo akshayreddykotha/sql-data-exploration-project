@@ -1,4 +1,3 @@
-# SQL data exploration project
 Parch and Posey database was used to explore different functional aspects of SQL from basic to advanced.
 
 This short project is to help anyone to setup their own local environment and practice querying. 
@@ -62,7 +61,8 @@ To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
 
 3. Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. Your final table should have 3 columns: region name, account name, and unit price. A few accounts have 0 for total, so I divided by (total + 0.01) to assure not dividing by zero.
 
-Check your queries using this file [Joins_11_part_1.sql](). 
+Check your queries using this file [JOINS.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/JOINS.ipynb). 
+
 ### Aggregations
 #### DISTINCT
 1. Use DISTINCT to test if there are any accounts associated with more than one region.
@@ -105,7 +105,7 @@ Check your query and output using this file [windowfunctions-RANK.ipynb](https:/
 2. Add a WHERE clause to each of the tables that you unioned in the query above, filtering the first table where name equals Walmart and filtering the second table where name equals Disney. 
 3. Perform the union in your first query (under the Appending Data via UNION header) in a common table expression and name it double_accounts. Then do a COUNT the number of times a name appears in the double_accounts table. If you do this correctly, your query results should have a count of 2 for each name.
 
-Check your queries using this file [AdvancedJoins_PerformanceTuning_12_Union.sql]().
+Check your queries using this file [advanced-JOINS.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/advanced-JOINS.ipynb).
 
 ### Subqueries
 These are an integral part of queries in SQL without which complex queries don't exist.
