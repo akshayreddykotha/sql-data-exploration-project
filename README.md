@@ -114,6 +114,12 @@ These are an integral part of queries in SQL without which complex queries don't
 1. Most commonly used in WHERE, then SELECT and FROM.
 2. Sometimes subqueries are also seen within ON while joining two tables.
 
+### Functional programming (MS SQL Server)
+
+1. Variable declaration: `DECLARE @var INT = 2` and others, check documentation
+2. WHILE (@var ... condition)
+3. IF ELSE, just like python. Both IF ELSE and WHILE loops have the `BEGIN` and `END` clause within
+4. `SET` to assign a value to the variable
 
 ### Arithmetic functions - Not so common
 
@@ -161,6 +167,9 @@ These are an integral part of queries in SQL without which complex queries don't
 3. `$$ $$` within the CROSSTAB converts the table to string before converting it to a CROSSTAB
 4. An extension has to be imported, just like importing a library in python/R which is done by `CREATE EXTENSION IF NOT EXISTS tablefunc` which is a library which isn't present in the default environment.
 
+### MSSQl Server
+
+1. DECLARE, SET, WHILE, @var, BEGIN, END, PRINT, REPLICATE
 
 New queries are always welcome :). Ping to collaborate and contribute.
 
