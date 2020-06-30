@@ -120,6 +120,7 @@ These are an integral part of queries in SQL without which complex queries don't
 2. WHILE (@var ... condition)
 3. IF ELSE, just like python. Both IF ELSE and WHILE loops have the `BEGIN` and `END` clause within
 4. `SET` to assign a value to the variable
+5. BREAK
 
 ### Arithmetic functions - Not so common
 
