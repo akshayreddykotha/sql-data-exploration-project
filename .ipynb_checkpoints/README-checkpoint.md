@@ -117,8 +117,7 @@ Check your queries using this file [advanced-JOINS.ipynb](https://github.com/aks
 These are an integral part of queries in SQL without which complex queries don't exist.
 
 #### Correlated or synchronized subqueries
-1. Uses the same table within the inner and outer query. The outer query is where the records are accessed from and the inner query is used to filter values based on a correlated column (same in the two table aliases).
-2. This is a great alternative for window functions to return the `first` or `last` entries within a group.
+Uses the same table within the inner and outer query. The outer query is where the records are accessed from and the inner query is used to filter values based on a correlated column (same in the two table aliases). This is a great alternative for window functions to return the `first` or `last` entries within a group.
 
 *Trivia*:
 1. Most commonly used in WHERE, then SELECT and FROM.
