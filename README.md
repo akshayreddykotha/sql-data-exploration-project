@@ -146,6 +146,9 @@ These are an integral part of queries in SQL without which complex queries don't
 
 ### Miscellaneous
 
+#### LIMIT OFFSET
+1. LIMIT 5 OFFSET 5 returns the entries by excluding the first 5 entries and still limiting the final output to 5 entries. If the entries are identified using 1, 2, ..., then the entries with id - 6 to 10 are returned.
+
 #### RIGHT and LEFT
 1. RIGHT(name, 3) extracts the last the letters of the column name.
 2. LEFT(name, 2) extracts the first two letter of the column name.
