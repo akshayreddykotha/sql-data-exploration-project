@@ -52,9 +52,12 @@ To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
 #### Definitions
 
 1. A **semi-join** returns the rows of the first table where it can find a match in the second table.
+2. A **cross-join** returns the cartesian product (number of rows) of the number of rows of the tables involved.
 
 *Trivia*:
 1. JOIN keywords works for INNER JOIN. It is the default join in SQL.
+2. CROSS JOIN used with a WHERE clause similar to the ON condition in INNER JOIN will give out the same results as an INNER JOIN.
+3. CROSS JOIN is an expensive statement that can lead to data explosion so it needs to be used carefully, preferably as an alternative for an INNER JOIN. For different ways of writing a CROSS JOIN query, refer [JOINS.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/JOINS.ipynb).
 
 #### Questions
 
@@ -117,7 +120,8 @@ Check your queries using this file [advanced-JOINS.ipynb](https://github.com/aks
 These are an integral part of queries in SQL without which complex queries don't exist.
 
 #### Correlated or synchronized subqueries
-Uses the same table within the inner and outer query. The outer query is where the records are accessed from and the inner query is used to filter values based on a correlated column (same in the two table aliases). This is a great alternative for window functions to return the `first` or `last` entries within a group.
+1. Uses the same table within the inner and outer query. The outer query is where the records are accessed from and the inner query is used to filter values based on a correlated column (same in the two table aliases).
+2. This is a great alternative for window functions to return the `first` or `last` entries within a group.
 
 *Trivia*:
 1. Most commonly used in WHERE, then SELECT and FROM.
@@ -144,6 +148,9 @@ Uses the same table within the inner and outer query. The outer query is where t
 1. Can be used to calculate the length of string in any cell in the table. It goes by LENGTH(city) for instance.
 
 ### Miscellaneous
+
+#### LIMIT OFFSET
+1. LIMIT 5 OFFSET 5 returns the entries by excluding the first 5 entries and still limiting the final output to 5 entries. If the entries are identified using 1, 2, ..., then the entries with id - 6 to 10 are returned.
 
 #### RIGHT and LEFT
 1. RIGHT(name, 3) extracts the last the letters of the column name.

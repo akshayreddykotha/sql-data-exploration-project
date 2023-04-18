@@ -52,9 +52,12 @@ To save the outcome into a table - Ex: `SELECT x, y, z INTO table FROM ...`
 #### Definitions
 
 1. A **semi-join** returns the rows of the first table where it can find a match in the second table.
+2. A **cross-join** returns the cartesian product (number of rows) of the number of rows of the tables involved.
 
 *Trivia*:
 1. JOIN keywords works for INNER JOIN. It is the default join in SQL.
+2. CROSS JOIN used with a WHERE clause similar to the ON condition in INNER JOIN will give out the same results as an INNER JOIN.
+3. CROSS JOIN is an expensive statement that can lead to data explosion so it needs to be used carefully, preferably as an alternative for an INNER JOIN. For different ways of writing a CROSS JOIN query, refer [JOINS.ipynb](https://github.com/akshayreddykotha/sql-data-exploration-project/blob/master/JOINS.ipynb).
 
 #### Questions
 
