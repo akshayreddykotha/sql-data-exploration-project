@@ -149,6 +149,10 @@ These are an integral part of queries in SQL without which complex queries don't
 
 ### Miscellaneous
 
+#### INTERSECT
+1. `select index from table1 INTERSECT select index from table2`
+2. Number of columns on which intersect is applied has to match between the tables. If not selected, by default, first column is chosen.
+
 #### LIMIT OFFSET
 1. LIMIT 5 OFFSET 5 returns the entries by excluding the first 5 entries and still limiting the final output to 5 entries. If the entries are identified using 1, 2, ..., then the entries with id - 6 to 10 are returned.
 
